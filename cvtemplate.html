@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CV</title>
+
+    <style>
+        * {
+            font-family: Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .main {
+            height: max-content;
+            width: 99.8%;
+            background-color: rgb(241, 241, 241);
+            margin: 0;
+            padding: 1px;
+        }
+
+        .Section1 {
+            height: max-content;
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid red; */
+            margin-top: 2%;
+        }
+
+        .leftdiv {
+            height: max-content;
+            width: 33%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            background-color: white;
+            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.27);
+        }
+
+        .rightdiv {
+            height: max-content;
+            width: 65%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            /* margin-left: 15px; */
+            padding-left: 10px;
+            top: 0;
+
+
+        }
+
+        .imagediv {
+            height: 300px;
+            width: 99.6%;
+            /* border: 1px solid green; */
+            background-image: url(./cv/images1.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+
+        .name {
+            font-weight: normal;
+            margin-top: 240px;
+            margin-left: 20px;
+        }
+
+        .prsnlinfo {
+            height: 150px;
+            width: 94%;
+            /* border: 1px solid green; */
+            border-bottom: 1px solid rgb(238, 238, 238);
+            margin: auto;
+        }
+
+        .occupation {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid darkblue; */
+            margin-top: 5%;
+        }
+
+        .bfc {
+            color: rgb(0, 150, 136);
+            font-size: 17px;
+            display: inline;
+        }
+
+        .designer {
+            opacity: 0.75;
+            font-weight: normal;
+            display: inline;
+            font-size: 15px;
+            margin-left: 12px;
+        }
+
+        .skills {
+            height: max-content;
+            width: 94%;
+            /* border: 1px solid darkblue; */
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .skillshdng {
+            opacity: 0.65;
+            display: inline;
+            margin-left: 12px;
+        }
+
+        .skill1 {
+            opacity: 0.75;
+            font-weight: normal;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        .grayprnt {
+            height: 18px;
+            width: 100%;
+            border: none;
+            background-color: rgb(241, 241, 241);
+            position: relative;
+            border-radius: 10px;
+            margin-top: 20px;
+
+        }
+
+        .greenchild {
+            height: 18px;
+            width: 90%;
+            border: none;
+            background-color: rgb(0, 150, 136);
+            position: absolute;
+            border-radius: 10px;
+        }
+
+        .prcnt {
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            padding: 2px;
+        }
+
+        .greenchild2 {
+            height: 18px;
+            width: 80%;
+            border: none;
+            background-color: rgb(0, 150, 136);
+            position: absolute;
+            border-radius: 10px;
+        }
+
+        .greenchild3 {
+            height: 18px;
+            width: 75%;
+            border: none;
+            background-color: rgb(0, 150, 136);
+            position: absolute;
+            border-radius: 10px;
+        }
+
+        .greenchild4 {
+            height: 18px;
+            width: 50%;
+            border: none;
+            background-color: rgb(0, 150, 136);
+            position: absolute;
+            border-radius: 10px;
+        }
+
+        .Languages {
+            height: 285px;
+            width: 94%;
+            /* border: 1px solid darkblue; */
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .lng {
+            opacity: 0.65;
+            display: inline;
+            margin-left: 12px;
+        }
+
+        .lng1 {
+            opacity: 0.75;
+            font-weight: normal;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .engdiv {
+            height: 25px;
+            width: 100%;
+            border: none;
+            background-color: rgb(0, 150, 136);
+            border-radius: 10px;
+            margin-top: 20px;
+
+        }
+
+        .span {
+            height: 25px;
+            width: 100%;
+            border: none;
+            background-color: rgb(241, 241, 241);
+            position: relative;
+            border-radius: 10px;
+            margin-top: 20px;
+
+        }
+
+        .spanchild {
+            height: 25px;
+            width: 55%;
+            border: none;
+            background-color: rgb(0, 150, 136);
+            position: absolute;
+            border-radius: 10px;
+        }
+
+        .spanchild2 {
+            height: 25px;
+            width: 25%;
+            border: none;
+            background-color: rgb(0, 150, 136);
+            position: absolute;
+            border-radius: 10px;
+        }
+
+        .rightdiv1 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid green; */
+            background-color: white;
+            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.27);
+            padding-bottom: 30px;
+            padding-top: 10px;
+        }
+
+        .mainhdng {
+            height: max-content;
+            width: 50%;
+            /* border: 1px solid red; */
+        }
+
+        .mainprnt {
+            height: max-content;
+            width: 95%;
+            /* border: 1px solid lawngreen; */
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .wexp {
+            color: rgb(0, 150, 136);
+            font-size: 35px;
+            display: inline;
+        }
+
+        .workexp {
+            display: inline;
+            opacity: 0.70;
+            margin-left: 12px;
+            font-weight: normal;
+        }
+
+        .frstexp {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid red; */
+            margin-top: 40px;
+        }
+
+        .fed {
+            opacity: 0.70;
+        }
+
+        .hiringd {
+            height: max-content;
+            width: 400px;
+            /* border: 1px solid; */
+            margin-top: 10px;
+        }
+
+        .clndr {
+            color: rgb(0, 150, 136);
+            font-size: 18px;
+            display: inline;
+        }
+
+        .date {
+            color: rgb(0, 150, 136);
+            font-size: 16px;
+            display: inline;
+            font-weight: lighter;
+            margin-left: 12px;
+        }
+
+        .crnt {
+            height: 20px;
+            width: 16%;
+            border: none;
+            background-color: rgb(0, 150, 136);
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 2px;
+            text-align: center;
+        }
+
+        .tc {
+            color: white;
+            font-size: 14px;
+            font-weight: normal;
+            padding: 1px;
+
+        }
+
+        .p1 {
+            font-size: 15.5px;
+            margin-top: 20px;
+        }
+
+        .brdr {
+            border-bottom: 1px solid rgb(238, 238, 238);
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .rightdiv2 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid green; */
+            margin-top: 2%;
+            background-color: white;
+            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.27);
+            padding: 1px;
+            padding-bottom: 20px;
+
+        }
+
+        .hiringd2 {
+            height: max-content;
+            width: 400px;
+            /* border: 1px solid; */
+            margin-top: 20px;
+        }
+
+        .p2 {
+            font-size: 15.5px;
+            margin-top: 25px;
+        }
+
+        .brdr2 {
+            border-bottom: 1px solid rgb(238, 238, 238);
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .footer {
+            height: 20vh;
+            width: 100%;
+            background-color: rgb(0, 150, 136);
+            padding: 1px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .findme {
+            color: white;
+            font-weight: normal;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .icons {
+            color: white;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width:376px) {
+            .leftdiv {
+                width: 100%;
+            }
+
+            .rightdiv {
+                width: 100%;
+                margin-top: 10px;
+                padding-left: 0;
+            }
+        }
+        @media screen and (max-width:415px) {
+            .leftdiv {
+                width: 100%;
+            }
+
+            .rightdiv {
+                width: 100%;
+                margin-top: 10px;
+                padding-left: 0;
+            }
+        }
+        @media screen and (max-width:769px) {
+            .leftdiv {
+                width: 100%;
+            }
+
+            .rightdiv {
+                width: 100%;
+                margin-top: 10px;
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="Section1">
+            <div class="leftdiv">
+                <div class="imagediv">
+                    <h1 class="name">Jane Doe</h1>
+                </div>
+                <div class="prsnlinfo">
+                    <div class="occupation">
+                        <i class="fa-solid fa-briefcase bfc"></i>
+                        <h5 class="designer">Designer</h5>
+                    </div>
+                    <div class="occupation">
+                        <i class="fa-solid fa-house bfc"></i>
+                        <h5 class="designer">London, UK</h5>
+                    </div>
+                    <div class="occupation">
+                        <i class="fa-solid fa-envelope bfc"></i>
+                        <h5 class="designer">ex@mail.com</h5>
+                    </div>
+                    <div class="occupation">
+                        <i class="fa-solid fa-phone bfc"></i>
+                        <h5 class="designer">1224435534</h5>
+                    </div>
+
+                </div>
+                <div class="skills">
+                    <i class="fa-solid fa-star-of-life bfc"></i>
+                    <h3 class="skillshdng">Skills</h3>
+                    <h5 class="skill1">Adobe Photoshop</h5>
+                    <div class="grayprnt">
+                        <div class="greenchild">
+                            <h6 class="prcnt">90%</h6>
+                        </div>
+                    </div>
+                    <h5 class="skill1">Photography</h5>
+                    <div class="grayprnt">
+                        <div class="greenchild2">
+                            <h6 class="prcnt">80%</h6>
+                        </div>
+                    </div>
+                    <h5 class="skill1">Illustrator</h5>
+                    <div class="grayprnt">
+                        <div class="greenchild3">
+                            <h6 class="prcnt">75%</h6>
+                        </div>
+                    </div>
+                    <h5 class="skill1">Media</h5>
+                    <div class="grayprnt">
+                        <div class="greenchild4">
+                            <h6 class="prcnt">50%</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="Languages">
+                    <i class="fa-solid fa-earth-americas bfc"></i>
+                    <h3 class="lng">Languages</h3>
+                    <h5 class="lng1">English</h5>
+                    <div class="engdiv"></div>
+                    <h5 class="lng1">Spanish</h5>
+                    <div class="span">
+                        <div class="spanchild"></div>
+                    </div>
+                    <h5 class="lng1">German</h5>
+                    <div class="span">
+                        <div class="spanchild2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightdiv">
+                <div class="rightdiv1">
+                    <div class="mainprnt">
+                        <div class="mainhdng">
+                            <i class="fa-solid fa-briefcase wexp"></i>
+                            <h1 class="workexp">Work Experience</h1>
+                        </div>
+                        <div class="frstexp">
+                            <h4 class="fed">Front End Developer / w3schools.com</h4>
+                            <div class="hiringd">
+                                <i class="fa-regular fa-calendar-days clndr"></i>
+                                <h4 class="date">Jan 2015 -</h4>
+                                <div class="crnt">
+                                    <h4 class="tc">Current</h4>
+                                </div>
+
+                            </div>
+                            <p class="p1">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt
+                                aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde
+                                doloremque repellendus iure, iste.
+                            </p>
+                            <div class="brdr"></div>
+                        </div>
+                        <div class="frstexp">
+                            <h4 class="fed">Web Developer / something.com</h4>
+                            <div class="hiringd">
+                                <i class="fa-regular fa-calendar-days clndr"></i>
+                                <h4 class="date">Mar 2012 - Dec 2014</h4>
+                            </div>
+                            <p class="p1">Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt
+                                aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde
+                                doloremque repellendus iure, iste.</p>
+                            <div class="brdr"></div>
+                        </div>
+                        <div class="frstexp">
+                            <h4 class="fed">Graphic Designer / designsomething.com</h4>
+                            <div class="hiringd">
+                                <i class="fa-regular fa-calendar-days clndr"></i>
+                                <h4 class="date">Jun 2010 - Mar 2012</h4>
+                            </div>
+                            <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightdiv2">
+                    <div class="mainprnt">
+                        <div class="mainhdng">
+                            <i class="fa-solid fa-certificate wexp"></i>
+                            <h1 class="workexp">Education</h1>
+                        </div>
+                        <div class="frstexp">
+                            <h4 class="fed">W3Schools.com</h4>
+                            <div class="hiringd2">
+                                <i class="fa-regular fa-calendar-days clndr"></i>
+                                <h4 class="date">Forever</h4>
+                            </div>
+                            <p class="p2">Web Development! All I need to know in one place </p>
+                            <div class="brdr2"></div>
+                        </div>
+                        <div class="frstexp">
+                            <h4 class="fed">London Business School</h4>
+                            <div class="hiringd2">
+                                <i class="fa-regular fa-calendar-days clndr"></i>
+                                <h4 class="date">2013 - 2015</h4>
+                            </div>
+                            <p class="p2">Master Degree </p>
+                            <div class="brdr2"></div>
+                        </div>
+                        <div class="frstexp">
+                            <h4 class="fed">School of Coding</h4>
+                            <div class="hiringd2">
+                                <i class="fa-regular fa-calendar-days clndr"></i>
+                                <h4 class="date">2010 - 2013</h4>
+                            </div>
+                            <p class="p2">Bachelor Degree </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <h5 class="findme">Find me on social media.</h5>
+            <i class="fa-brands fa-square-facebook icons"></i>
+            <i class="fa-brands fa-instagram icons"></i>
+            <i class="fa-brands fa-snapchat icons"></i>
+            <i class="fa-brands fa-pinterest-p icons"></i>
+            <i class="fa-brands fa-twitter icons"></i>
+            <i class="fa-brands fa-linkedin-in icons"></i>
+            <h5 class="findme">Powered by <span style="text-decoration: underline;">w3.css</span></h5>
+        </div>
+</body>
+
+</html>
